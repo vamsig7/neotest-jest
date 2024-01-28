@@ -32,9 +32,6 @@ local function run_jest_test_discovery(file_path)
   local command = vim.split(binary, "%s+")
 
   vim.list_extend(command, {
-    "--coverage",
-    "--verbose",
-    "--json",
     file_path,
     "-t",
     "@______________PLACEHOLDER______________@",
